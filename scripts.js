@@ -38,3 +38,6 @@ function takePhoto() {
 }
 
 getVideo();
+// when the video auto emits canplay event.
+// event listener then hears this and calls painToCanvas func
+video.addEventListener('canplay', paintToCanvas);
